@@ -21,11 +21,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX3171/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Octavi stuff.
+$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
+
+# Octavi Properties
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_USES_BLUR := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+OCTAVI_BUILD_TYPE := Unofficial
+OCTAVI_DEVICE_MAINTAINER := Daman
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_RMX3171
+PRODUCT_NAME := octavi_RMX3171
 PRODUCT_DEVICE := RMX3171
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme Narzo 30A
