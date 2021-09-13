@@ -24,6 +24,10 @@ $(call inherit-product, device/realme/RMX3171/device.mk)
 # Inherit some common DotOS stuff.
 $(call inherit-product, vendor/dot/config/common.mk)
 
+#Gapps
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := dot_RMX3171
 PRODUCT_DEVICE := RMX3171
@@ -46,4 +50,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+    ro.build.fingerprint=$(BUILD_FINGERPRINT
