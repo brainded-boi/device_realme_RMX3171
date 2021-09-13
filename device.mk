@@ -114,6 +114,10 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
 
+# Google Photos
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_2016_exclusive.xml
+
 PRODUCT_PACKAGES += \
     NotchBarKiller
 
