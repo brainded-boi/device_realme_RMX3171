@@ -23,7 +23,6 @@ $(call inherit-product, device/realme/RMX3171/device.mk)
 
 # Inherit some common MTKOSP stuff.
 $(call inherit-product, vendor/mtkosp/config/common_full_phone.mk)
-MTKOSP_OFFICIAL := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
