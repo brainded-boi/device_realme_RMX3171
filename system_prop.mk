@@ -24,6 +24,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Display
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.lcd_density=320
+    
+# GBoard
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.ime.kb_pad_port_b=1 \
+    ro.com.google.ime.corner_key_r=35
 	
 # Hardware Acceleration
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
