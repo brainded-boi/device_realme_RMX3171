@@ -98,6 +98,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.dha_th_rate=2.3 \
     ro.config.sdha_apps_bg_max=64 \
     ro.config.sdha_apps_bg_min=8
+    
+# GBoard
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.ime.kb_pad_port_b=1 \
+    ro.com.google.ime.corner_key_r=35
 
 # WFD
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -111,3 +116,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.mediatek.wlan.wsc=1 \
     ro.mediatek.wlan.p2p=1 \
     mediatek.wlan.ctia=0
+
+# MTKOSP
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.mtkosp.maintainer=Daman
