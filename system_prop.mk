@@ -119,4 +119,4 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # MTKOSP
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.mtkosp.maintainer=Daman
+    ro.mtkosp.maintainer=Abhishek
