@@ -105,6 +105,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0
 
+# GBoard
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.ime.kb_pad_port_b=1 \
+    ro.com.google.ime.corner_key_r=35
+
 # Wlan
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     wifi.interface=wlan0 \
